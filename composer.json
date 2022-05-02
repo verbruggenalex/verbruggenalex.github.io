@@ -91,7 +91,7 @@
         "symlink-module": [
             "rm -rf web/config",
             "mkdir -p web/config",
-            "cp -lr `ls -A | grep -v '.git\\|web\\|vendor'` web/config"
+            "cp -lr $(ls -A | grep -v '.git\\|web\\|vendor') web/config"
         ]
     },
     "require-dev": {
