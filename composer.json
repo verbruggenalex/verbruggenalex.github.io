@@ -85,8 +85,7 @@
             "git checkout composer.json"
         ],
         "drupal-install": [
-            "./vendor/bin/drush si standard --account-pass admin -y --ansi",
-            "./vendor/bin/drush en features features_ui -y --ansi"
+            "./vendor/bin/drush si standard --site-name='Alex Verbruggen' --site-mail=verbruggenalex@gmail.com --account-mail=verbruggenalex@gmail.com --account-pass admin -y --ansi"
         ],
         "symlink-module": [
             "rm -rf web/config",
