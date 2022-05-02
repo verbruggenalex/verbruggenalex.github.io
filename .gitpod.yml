@@ -2,8 +2,13 @@ image:
   file: assets/gitpod/Dockerfile
 tasks:
   - name: Install project
+    env:
+      GITPOD_REPO_ROOT: /workspace/verbruggenalex/web
     init: |
       composer install --prefer-install=auto
+      composer drupal-install
+    command: |
+      sudo service apache2 start
 ports:
   - port: 80
     onOpen: open-preview
