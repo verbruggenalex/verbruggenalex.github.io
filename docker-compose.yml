@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    image: verbral/docker-drupal:8.1-v4-apache
+    working_dir: ${PWD}
+    ports:
+      - 80:80
+    environment:
+      APACHE_DOCUMENT_ROOT: ${PWD}/web
+      PHP_EXTENSION_GD: 1
+      DRUPAL_CORE_CONSTRAINT: ^9.3
+      DRUSH_VERSION_CONSTRAINT: ^10
+    volumes:
+      - ${PWD}:${PWD}
+      - ~/.ssh:/home/docker/.ssh
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=db
+    volumes:
+      - mysql:/var/lib/mysql
+volumes:
+  mysql:

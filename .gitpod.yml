@@ -2,13 +2,10 @@ image:
   file: assets/gitpod/Dockerfile
 tasks:
   - name: Install project
-    env:
-      APACHE_DOCROOT_IN_REPO: web
     init: |
-      composer install --prefer-install=auto
-      composer drupal-install
-    command: |
-      apachectl start
+      docker-compose up -d
+      docker-compose exec web composer install --prefer-install=auto
+      docker-compose exec web composer drupal-install
 ports:
   - port: 80
     onOpen: open-preview
