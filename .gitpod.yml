@@ -1,0 +1,20 @@
+image:
+  file: assets/gitpod/Dockerfile
+tasks:
+  - name: Install project
+    init: |
+      composer install
+ports:
+  - port: 80
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - felixfbecker.php-debug
+    - wongjn.php-sniffer
+    - neilbrayfield.php-docblocker
+    - bmewburn.vscode-intelephense-client
+    - mblode.twig-language-2
+    - drupal-mentoring.drupalpod-ext
+    - timonwong.shellcheck
+    - rogalmic.bash-debug
