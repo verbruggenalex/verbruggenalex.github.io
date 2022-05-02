@@ -3,7 +3,7 @@ image:
 tasks:
   - name: Install project
     env:
-      GITPOD_REPO_ROOT: /workspace/verbruggenalex/web
+      APACHE_DOCROOT_IN_REPO: web
     init: |
       composer install --prefer-install=auto
       composer drupal-install
