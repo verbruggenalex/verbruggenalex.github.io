@@ -8,7 +8,7 @@ tasks:
       composer install --prefer-install=auto
       composer drupal-install
     command: |
-      sudo service apache2 start
+      apachectl start
 ports:
   - port: 80
     onOpen: open-preview
