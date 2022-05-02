@@ -1,5 +1,3 @@
-image:
-  file: assets/gitpod/Dockerfile
 tasks:
   - name: Install project
     init: |
