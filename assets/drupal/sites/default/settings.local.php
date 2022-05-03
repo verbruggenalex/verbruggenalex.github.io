@@ -178,3 +178,7 @@ $config['system.performance']['cache']['page']['max_age'] = 0;
 $settings['cache']['bins']['render'] = 'cache.backend.null';
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 $settings['cache']['bins']['page'] = 'cache.backend.null';
+
+// Add this to avoid rewriting settings.php
+$settings['hash_salt'] = 'tEtBIG6ef8ivFoNYCdIFSR8KS364uzeSYaHjOw2L5UAqoX2X1tJPM6XKFrBPx2F7N5aH-m4SSA';
+$settings['config_sync_directory'] = '../config/sync';

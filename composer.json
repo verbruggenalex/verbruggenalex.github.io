@@ -1,7 +1,7 @@
 {
     "name": "verbruggenalex/verbruggenalex",
     "description": "Personal website",
-    "type": "drupal-config",
+    "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -95,7 +95,7 @@
         "symlink-module": [
             "rm -rf web/config",
             "mkdir -p web/config",
-            "cp -lr $(ls -A | grep -v '.git\\|web\\|vendor') web/config"
+            "cp -lr $(ls -A | grep -v '.git\\|web\\|vendor') ./web/config"
         ]
     },
     "require-dev": {
