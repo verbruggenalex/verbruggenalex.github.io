@@ -21,8 +21,7 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9",
         "drupal/tome": "^1.7",
-        "drush/drush": "^10",
-        "verbruggenalex/verbruggenalex.github.io": "dev-main"
+        "drush/drush": "^10"
     },
     "conflict": {
         "drupal/drupal": "*"
