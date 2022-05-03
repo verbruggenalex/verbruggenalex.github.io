@@ -8,14 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="/core/themes/bartik/favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <title>Website feedback | Alex Verbruggen</title>
+    <title>Search | Alex Verbruggen</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_ae7UPIbd_IVJyK4q6Bo1deBGLSQmYVfqayVz97QzYwU.css" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_QVAG5D3Tjgmzc55dRjVpYlhI02sBiqX5b0VAkKLpSGg.css" />
 <link rel="stylesheet" media="print" href="/sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css" />
 
     
   </head>
-  <body class="layout-one-sidebar layout-sidebar-first path-contact">
+  <body class="layout-one-sidebar layout-sidebar-first path-search">
         <a href="#main-content" class="visually-hidden focusable skip-link">
       Skip to main content
     </a>
@@ -117,6 +117,9 @@
           <li>
                   <a href="/">Home</a>
               </li>
+          <li>
+                  <a href="/search">Search</a>
+              </li>
         </ol>
   </nav>
 
@@ -135,7 +138,7 @@
       <div class="content">
       
 
-  <h1 class="title page-title">Website feedback</h1>
+  <h1 class="title page-title">Search</h1>
 
 
     </div>
@@ -144,43 +147,19 @@
   
     
       <div class="content">
-      <form class="contact-message-feedback-form contact-message-form contact-form" data-user-info-from-browser data-drupal-selector="contact-message-feedback-form" action="/contact" method="post" id="contact-message-feedback-form" accept-charset="UTF-8">
-  <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-name form-item-name">
-      <label for="edit-name" class="js-form-required form-required">Your name</label>
-        <input data-drupal-selector="edit-name" type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
+      <form class="search-form" data-drupal-selector="search-form" action="/search/node" method="post" id="search-form" accept-charset="UTF-8">
+  <div class="container-inline js-form-wrapper form-wrapper" data-drupal-selector="edit-basic" id="edit-basic"><div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys">
+      <label for="edit-keys">Enter your keywords</label>
+        <input data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="30" maxlength="255" class="form-search" />
 
         </div>
-<div class="js-form-item form-item js-form-type-email form-type-email js-form-item-mail form-item-mail">
-      <label for="edit-mail" class="js-form-required form-required">Your email address</label>
-        <input data-drupal-selector="edit-mail" type="email" id="edit-mail" name="mail" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true" />
-
-        </div>
-<div class="field--type-string field--name-subject field--widget-string-textfield js-form-wrapper form-wrapper" data-drupal-selector="edit-subject-wrapper" id="edit-subject-wrapper">      <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-subject-0-value form-item-subject-0-value">
-      <label for="edit-subject-0-value" class="js-form-required form-required">Subject</label>
-        <input class="js-text-full text-full form-text required" data-drupal-selector="edit-subject-0-value" type="text" id="edit-subject-0-value" name="subject[0][value]" value="" size="60" maxlength="100" placeholder="" required="required" aria-required="true" />
-
-        </div>
-
-  </div>
-<div class="field--type-string-long field--name-message field--widget-string-textarea js-form-wrapper form-wrapper" data-drupal-selector="edit-message-wrapper" id="edit-message-wrapper">      <div class="js-form-item form-item js-form-type-textarea form-type-textarea js-form-item-message-0-value form-item-message-0-value">
-      <label for="edit-message-0-value" class="js-form-required form-required">Message</label>
-        <div class="form-textarea-wrapper">
-  <textarea class="js-text-full text-full form-textarea required resize-vertical" data-drupal-selector="edit-message-0-value" id="edit-message-0-value" name="message[0][value]" rows="12" cols="60" placeholder="" required="required" aria-required="true"></textarea>
+<input class="search-form__submit button js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search" />
 </div>
-
-        </div>
-
-  </div>
-<input autocomplete="off" data-drupal-selector="form-ni7erg2vmo5qktozxj2udlqayn-e9nw8j7vlvdjs978" type="hidden" name="form_build_id" value="form-nI7ERG2vMO5qKTOZxj2udLqaYN-E9nw8j7vlvdJs978" />
-<input data-drupal-selector="edit-contact-message-feedback-form" type="hidden" name="form_id" value="contact_message_feedback_form" />
-<div class="field--type-language field--name-langcode field--widget-language-select js-form-wrapper form-wrapper" data-drupal-selector="edit-langcode-wrapper" id="edit-langcode-wrapper">      
-  </div>
-<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Send message" class="button button--primary js-form-submit form-submit" />
-<input data-drupal-selector="edit-preview" type="submit" id="edit-preview" name="op" value="Preview" class="button js-form-submit form-submit" />
-</div>
+<a href="/search/node/help" class="search-help-link" data-drupal-selector="edit-help-link" id="edit-help-link">About searching</a><input autocomplete="off" data-drupal-selector="form-acm0lha-5trld0-fknvlopduq21pbfgxhxnltmgqusw" type="hidden" name="form_build_id" value="form-acM0lHA_5TrlD0_fKNVLoPdUq21pBFgxhXnltMgQuSw" />
+<input data-drupal-selector="edit-search-form" type="hidden" name="form_id" value="search_form" />
 
 </form>
-
+<div class="item-list"><h3>Your search yielded no results.</h3></div>
     </div>
   </div>
 
@@ -213,7 +192,7 @@
       
               <ul class="clearfix menu">
                     <li class="menu-item">
-        <a href="/contact" data-drupal-link-system-path="contact" class="is-active">Contact</a>
+        <a href="/contact" data-drupal-link-system-path="contact">Contact</a>
               </li>
         </ul>
   
@@ -240,8 +219,6 @@
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"contact","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"fe897e4bfdb5f361597294232754853793fd2787aa0b555556128ac13b433966"}}</script>
-<script src="/sites/default/files/js/js_BB85lkEj3D5enYlfx7q1gEZ8nnx8Qn8IXCuM8O60P9I.js"></script>
-
+    
   </body>
 </html>

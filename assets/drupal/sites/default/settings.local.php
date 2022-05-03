@@ -183,3 +183,4 @@ $config['system.performance']['cache']['page']['max_age'] = 0;
 // Add this to avoid rewriting settings.php
 $settings['hash_salt'] = 'tEtBIG6ef8ivFoNYCdIFSR8KS364uzeSYaHjOw2L5UAqoX2X1tJPM6XKFrBPx2F7N5aH-m4SSA';
 $settings['config_sync_directory'] = '../config/sync';
+$settings['tome_static_directory'] = '../docs';
