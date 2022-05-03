@@ -170,9 +170,9 @@ $databases = [];
  * information on these defaults and the potential issues.
  *
  * More details can be found in the constructor methods for each driver:
- * - \Drupal\mysql\Driver\Database\mysql\Connection::__construct()
- * - \Drupal\pgsql\Driver\Database\pgsql\Connection::__construct()
- * - \Drupal\sqlite\Driver\Database\sqlite\Connection::__construct()
+ * - \Drupal\Core\Database\Driver\mysql\Connection::__construct()
+ * - \Drupal\Core\Database\Driver\pgsql\Connection::__construct()
+ * - \Drupal\Core\Database\Driver\sqlite\Connection::__construct()
  *
  * Sample Database configuration format for PostgreSQL (pgsql):
  * @code
@@ -249,7 +249,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'vrLVdIKCeNEj5zxfPK_Hhy5cSglPoAhHSVxtJxoYAQ2w6uSPJNNCzqU8n8YQxjWcZX8M4vVwoQ';
+$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
@@ -703,8 +703,6 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * @endcode
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
- *
- * @see https://www.drupal.org/docs/installing-drupal/trusted-host-settings
  */
 
 /**
@@ -771,15 +769,3 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'db',
-  'username' => 'root',
-  'password' => '',
-  'prefix' => '',
-  'host' => '127.0.0.1',
-  'port' => '3306',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'driver' => 'mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
-$settings['config_sync_directory'] = 'sites/default/files/config_TVrg8uDL4r873x5Sg5Bjki8dur0R31vb7LGDRlBZ71xvM09rxIVDoakkagAJTjLCfS9v56-Yew/sync';

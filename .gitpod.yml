@@ -1,5 +1,7 @@
 tasks:
   - name: Install project
+    env:
+      MYSQL_HOST: 127.0.0.1
     init: |
       docker-compose up -d
       docker-compose exec web composer install --prefer-install=auto
