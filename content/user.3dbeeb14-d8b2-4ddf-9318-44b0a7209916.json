@@ -1,12 +1,12 @@
 {
     "uid": [
         {
-            "value": 1
+            "value": 0
         }
     ],
     "uuid": [
         {
-            "value": "d13ad7d6-f373-448f-b8ad-14247ca35c5a"
+            "value": "3dbeeb14-d8b2-4ddf-9318-44b0a7209916"
         }
     ],
     "langcode": [
@@ -22,47 +22,44 @@
     "preferred_admin_langcode": [],
     "name": [
         {
-            "value": "admin"
+            "value": ""
         }
     ],
-    "mail": [
-        {
-            "value": "verbruggenalex@gmail.com"
-        }
-    ],
+    "mail": [],
     "timezone": [
         {
-            "value": "UTC"
+            "value": ""
         }
     ],
     "status": [
         {
-            "value": true
+            "value": false
         }
     ],
     "created": [
         {
-            "value": "2022-05-03T10:58:10+00:00",
+            "value": "2022-05-04T15:59:57+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-05-03T10:58:10+00:00",
+            "value": "2022-05-04T15:59:57+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "roles": [
-        {
-            "target_id": "administrator",
-            "target_type": "user_role",
-            "target_uuid": "5dbceeb3-a467-4908-aa8a-b0d1ff1c6f1f"
-        }
-    ],
+    "roles": [],
     "default_langcode": [
         {
             "value": true
         }
     ],
-    "user_picture": []
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ]
 }

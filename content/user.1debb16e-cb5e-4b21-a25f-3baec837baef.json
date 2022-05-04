@@ -1,12 +1,12 @@
 {
     "uid": [
         {
-            "value": 0
+            "value": 1
         }
     ],
     "uuid": [
         {
-            "value": "ec63f874-d8e6-436c-909a-cd6a9bf1aeb6"
+            "value": "1debb16e-cb5e-4b21-a25f-3baec837baef"
         }
     ],
     "langcode": [
@@ -22,29 +22,33 @@
     "preferred_admin_langcode": [],
     "name": [
         {
-            "value": ""
+            "value": "admin"
         }
     ],
-    "mail": [],
+    "mail": [
+        {
+            "value": "verbruggenalex@gmail.com"
+        }
+    ],
     "timezone": [
         {
-            "value": ""
+            "value": "UTC"
         }
     ],
     "status": [
         {
-            "value": false
+            "value": true
         }
     ],
     "created": [
         {
-            "value": "2022-05-03T10:58:10+00:00",
+            "value": "2022-05-04T15:59:57+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-05-03T10:58:10+00:00",
+            "value": "2022-05-04T15:59:57+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -54,5 +58,12 @@
             "value": true
         }
     ],
-    "user_picture": []
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ]
 }
