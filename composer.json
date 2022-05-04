@@ -21,7 +21,8 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9",
         "drupal/tome": "^1.7",
-        "drush/drush": "^10"
+        "drush/drush": "^10",
+        "verbruggenalex/project_profile": "dev-main"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -74,27 +75,35 @@
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/profiles/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
             ]
         }
     },
     "scripts": {
         "post-install-cmd": [
-            "@symlink-module"
         ],
         "post-update-cmd": [
-            "@symlink-module"
         ],
         "drupal-build": [
             "composer require composer/installers dealerdirect/phpcodesniffer-composer-installer drupal/core-composer-scaffold:$DRUPAL_CORE_CONSTRAINT drupal/core-dev-pinned:$DRUPAL_CORE_CONSTRAINT drupal/core-recommended:$DRUPAL_CORE_CONSTRAINT drush/drush:$DRUSH_VERSION_CONSTRAINT mglaman/phpstan-drupal phpstan/extension-installer --dev --ansi",
             "git checkout composer.json"
         ],
         "drupal-install": [
-            "./vendor/bin/drush si standard --site-name='Alex Verbruggen' --site-mail=verbruggenalex@gmail.com --account-mail=verbruggenalex@gmail.com --account-pass admin -y --ansi"
-        ],
-        "symlink-module": [
-            "rm -rf web/config",
-            "mkdir -p web/config",
-            "cp -lr $(ls -A | grep -v '.git\\|web\\|vendor') ./web/config"
+            "./vendor/bin/drush si project_profile --site-name='Alex Verbruggen' --site-mail=verbruggenalex@gmail.com --account-mail=verbruggenalex@gmail.com --account-pass admin -y --ansi"
         ],
         "generate-static": [
             "./vendor/bin/drush tome:export",

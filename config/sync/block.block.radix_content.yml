@@ -1,0 +1,22 @@
+uuid: 93a58d76-f69a-4957-9b8f-10f6b5a70e35
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radix
+_core:
+  default_config_hash: xdCRBoy0Lhju49tWMkUwWy1Kc4EZCyvs3PBdEhclC3c
+id: radix_content
+theme: radix
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

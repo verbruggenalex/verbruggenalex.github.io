@@ -1,0 +1,22 @@
+uuid: 6657dace-61da-48a5-8603-04958a815148
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - project_theme
+_core:
+  default_config_hash: OL95neLzLGy3REU0PZRFcKuP-o2u2lA0-ExLvTJm2CM
+id: project_theme_messages
+theme: project_theme
+region: header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
