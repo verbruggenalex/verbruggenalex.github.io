@@ -1,0 +1,58 @@
+grumphp:
+  ascii:
+    failed: ~
+    succeeded: ~
+  tasks:
+    composer:
+      no_check_all: true
+    file_size:
+      max_size: 100K
+      ignore_patterns:
+        - phpstan-baseline.neon
+    git_blacklist:
+      keywords:
+        - "die("
+        - "var_dump("
+        - "print_r("
+        - "print("
+        - "dump("
+        - "debug_backtrace("
+        - "exit;"
+        - "echo "
+      triggered_by: [php,module,inc,install,test,profile,theme]
+      ignore_patterns:
+        - features.drush8.inc
+        - FeaturesCommands.php
+    jsonlint: ~
+    phpcs:
+      triggered_by: [php,module,inc,install,test,profile,theme,info.yml,services.yml,routing.yml]
+    phpstan:
+      triggered_by: [php,module,inc,install,test,profile,theme]
+      use_grumphp_paths: false
+    phplint:
+      triggered_by: [php,module,inc,install,test,profile,theme]
+    xmllint: ~
+    yamllint: ~
+  testsuites:
+    static:
+      tasks:
+        - composer
+        - file_size
+        - git_blacklist
+        - jsonlint
+        - phpcs
+        - phplint
+        - phpstan
+        - xmllint
+        - yamllint
+    git_pre_commit:
+      tasks:
+        - composer
+        - file_size
+        - git_blacklist
+        - jsonlint
+        - phpcs
+        - phplint
+        - phpstan
+        - xmllint
+        - yamllint
