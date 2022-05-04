@@ -8,6 +8,8 @@ tasks:
     init: |
       composer install --prefer-install=auto
       composer drupal-install
+    command: |
+      sed -i "s/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/$WAKATIME_API_KEY/g"  /home/gitpod/.wakatime.cfg
 ports:
   - port: 80
     onOpen: open-preview
