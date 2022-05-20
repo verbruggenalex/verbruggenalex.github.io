@@ -2,16 +2,14 @@ version: '3'
 services:
   web:
     image: verbral/docker-drupal:8.1-v4-apache
-    working_dir: ${PWD}
     ports:
       - 80:80
     environment:
-      APACHE_DOCUMENT_ROOT: ${PWD}/web
+      APACHE_DOCUMENT_ROOT: web
       PHP_EXTENSION_GD: 1
-      DRUPAL_CORE_CONSTRAINT: ^9.3
-      DRUSH_VERSION_CONSTRAINT: ^10
+      PHP_INI_MEMORY_LIMIT: 1g
     volumes:
-      - ${PWD}:${PWD}
+      - ${PWD}:/var/www/html
       - ~/.ssh:/home/docker/.ssh
   mysql:
     image: mysql:5.7
