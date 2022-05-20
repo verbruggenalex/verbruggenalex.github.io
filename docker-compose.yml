@@ -8,6 +8,8 @@ services:
       APACHE_DOCUMENT_ROOT: web
       PHP_EXTENSION_GD: 1
       PHP_INI_MEMORY_LIMIT: 1g
+      PHP_EXTENSION_XDEBUG: 1
+      XDEBUG_CLIENT_HOST: 127.0.0.1
     volumes:
       - ${PWD}:/var/www/html
       - ~/.ssh:/home/docker/.ssh

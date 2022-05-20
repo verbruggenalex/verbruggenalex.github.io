@@ -6,7 +6,8 @@
     },
     "extensions": [
 		"bmewburn.vscode-intelephense-client",
-		"marcostazi.VS-code-drupal"
+		"marcostazi.VS-code-drupal",
+		"xdebug.php-debug"
 	],
     "workspaceFolder": "/var/www/html",
     "remoteUser": "docker",
