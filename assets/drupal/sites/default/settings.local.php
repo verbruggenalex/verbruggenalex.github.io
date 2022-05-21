@@ -46,13 +46,13 @@ assert_options(ASSERT_ACTIVE, TRUE);
  * In case the error level could not be fetched from the database, as for
  * example the database connection failed, we rely only on this value.
  */
-$config['system.logging']['error_level'] = 'verbose';
+//$config['system.logging']['error_level'] = 'verbose';
 
 /**
  * Disable CSS and JS aggregation.
  */
-$config['system.performance']['css']['preprocess'] = FALSE;
-$config['system.performance']['js']['preprocess'] = FALSE;
+//$config['system.performance']['css']['preprocess'] = FALSE;
+//$config['system.performance']['js']['preprocess'] = FALSE;
 
 /**
  * Disable the render cache.
@@ -166,22 +166,28 @@ $databases['default']['default'] = [
 ];
 
 $settings['trusted_host_patterns'] = ['.*'];
-//$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
 $settings['extension_discovery_scan_tests'] = TRUE;
 
-// Disable css js aggregation.
-// @todo only set this before export static site?
-$config['system.performance']['css']['preprocess'] = TRUE;
-$config['system.performance']['js']['preprocess'] = TRUE;
-$config['system.performance']['cache']['page']['max_age'] = 0;
+// If we are not on tome we disable all cache.
+if (strtok($_SERVER['SERVER_NAME'], '.') !== 'tome') {
+  // Disable caches.
+  $settings['cache']['bins']['render'] = 'cache.backend.null';
+  $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+  $settings['cache']['bins']['page'] = 'cache.backend.null';
+  // Disable agregation.
+  $config['system.performance']['css']['preprocess'] = FALSE;
+  $config['system.performance']['js']['preprocess'] = FALSE;
+  $config['system.performance']['cache']['page']['max_age'] = 0;
+  // Enable development services.
+  $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+  // Enable error logging.
+  $config['system.logging']['error_level'] = 'verbose';
+}
 
-// Disable caches.
-// $settings['cache']['bins']['render'] = 'cache.backend.null';
-// $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
-// $settings['cache']['bins']['page'] = 'cache.backend.null';
 
 // Add this to avoid rewriting settings.php
 $settings['hash_salt'] = 'tEtBIG6ef8ivFoNYCdIFSR8KS364uzeSYaHjOw2L5UAqoX2X1tJPM6XKFrBPx2F7N5aH-m4SSA';
 $settings['config_sync_directory'] = '../config/sync';
 $settings['tome_static_directory'] = '../docs';
-$settings['tome_static_path_exclude'] = ['/user/login'];
+$settings['tome_static_path_exclude'] = ['/user/login', '/search'];
+$config['tome_static_cron.settings']['base_url'] = 'https://verbruggenalex.github.io';

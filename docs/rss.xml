@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="http://tome.localhost.com/">
+<rss version="2.0" xml:base="http://tome.localhost.com/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Alex Verbruggen</title>
     <link>http://tome.localhost.com/</link>
-    <description/>
+    <description></description>
     <language>en</language>
     
     
