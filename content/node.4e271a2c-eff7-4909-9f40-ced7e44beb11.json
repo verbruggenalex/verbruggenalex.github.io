@@ -1,0 +1,111 @@
+{
+    "uuid": [
+        {
+            "value": "4e271a2c-eff7-4909-9f40-ced7e44beb11"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "article",
+            "target_type": "node_type",
+            "target_uuid": "2397cff1-72b7-4232-9c6d-a522880da7ce"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2022-05-21T22:12:19+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "8e97b386-db8e-4c48-8b91-248507f7cd0b"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "8e97b386-db8e-4c48-8b91-248507f7cd0b"
+        }
+    ],
+    "title": [
+        {
+            "value": "First article"
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-05-21T22:11:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-05-21T22:12:19+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "",
+            "pid": null,
+            "langcode": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim ex eget ex viverra porta. Maecenas eget semper massa. Vivamus justo lorem, tristique efficitur egestas vel, dictum sit amet nisi. Praesent lacus odio, porttitor mollis egestas ut, laoreet ullamcorper elit. Donec vitae est lacus. Praesent hendrerit ullamcorper enim a condimentum. Sed aliquet erat massa, vel vulputate ligula consequat id. Integer ac eros eu dui molestie commodo. Maecenas placerat blandit purus in vestibulum. Nulla facilisi. Nulla iaculis sagittis urna condimentum iaculis. Sed dictum, sem id tempus pretium, quam nunc elementum ipsum, eu pharetra tortor dui sed enim. Donec semper ac nisl ut bibendum. Nunc fringilla hendrerit odio, non mattis neque fermentum euismod. Donec vel lacus a risus pellentesque placerat. Maecenas nibh massa, eleifend sit amet dignissim sit amet, varius sed tellus.<\/p>\r\n\r\n<p>Donec semper fringilla lorem, tempor efficitur enim sollicitudin vitae. Curabitur tincidunt elementum nulla. Phasellus ut fermentum arcu, et vehicula nisi. Donec placerat neque vel magna feugiat, ut convallis libero semper. Nunc sit amet nunc suscipit, lobortis nisi non, imperdiet arcu. In vel dignissim ante, vel laoreet erat. Donec ornare dui eros, ut viverra ipsum porta vel. Sed venenatis dictum elit id cursus. Integer viverra dictum dolor non aliquet. Proin dignissim, lorem sit amet sagittis lobortis, metus dolor suscipit ligula, eget consectetur lectus quam a tortor. Cras consequat, nisl ut dignissim ornare, justo nulla laoreet sem, eu tincidunt risus sem et libero. In viverra diam nec tortor interdum, ut dignissim mauris feugiat. Suspendisse lacus massa, pulvinar eu rhoncus quis, sagittis eu leo. Nunc id mollis nibh, eu bibendum ante. Cras consectetur euismod quam. Quisque hendrerit ante at dolor faucibus, id tincidunt dolor congue.<\/p>\r\n\r\n<p>Donec magna nisl, vestibulum id erat at, consectetur faucibus erat. Donec aliquet vehicula diam commodo dapibus. Nam vehicula sem in pharetra pellentesque. Morbi vehicula bibendum ex, vel aliquet risus blandit suscipit. In sollicitudin condimentum turpis, sit amet cursus tortor blandit id. Suspendisse potenti. Cras molestie imperdiet orci, quis ullamcorper metus pulvinar non. Vestibulum egestas metus sit amet ultricies feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut massa eu libero tempor euismod commodo eu lacus.<\/p>\r\n\r\n<p>Nunc tellus dolor, facilisis eget sem et, finibus sollicitudin turpis. Pellentesque tristique ac ligula eu molestie. Phasellus pellentesque libero ac iaculis rutrum. Nullam sagittis metus orci, in convallis magna ultricies nec. Etiam sit amet auctor mauris, et ultrices ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam posuere rutrum mauris ac placerat. Quisque est elit, tincidunt id lorem a, dapibus consectetur est. Donec in laoreet ex, a fermentum nisi.<\/p>\r\n\r\n<p>Cras lobortis nisl et enim euismod aliquet. Duis ac egestas dolor, sit amet convallis odio. Fusce hendrerit eu diam non imperdiet. Etiam lorem lectus, semper et venenatis vel, dapibus vel velit. Etiam eget faucibus nibh. Praesent risus nunc, imperdiet quis venenatis ut, luctus sed nisi. Aliquam et velit id nisi tempor eleifend sit amet id massa. Etiam congue malesuada condimentum. Curabitur sed magna vitae elit pellentesque ullamcorper. Praesent commodo libero volutpat, venenatis dolor accumsan, rutrum tortor. Ut convallis turpis eget risus commodo eleifend. Etiam leo enim, dictum eu massa quis, pulvinar malesuada lorem. Sed at lacus imperdiet, vestibulum nulla vitae, placerat nulla. Nunc finibus, odio non sodales efficitur, urna tellus faucibus orci, sed viverra massa lorem quis elit.<\/p>\r\n",
+            "format": "basic_html",
+            "summary": ""
+        }
+    ],
+    "comment": [
+        {
+            "status": 2,
+            "cid": 0,
+            "last_comment_timestamp": 0,
+            "last_comment_name": "",
+            "last_comment_uid": 0,
+            "comment_count": 0
+        }
+    ],
+    "field_image": [],
+    "field_tags": [
+        {
+            "target_type": "taxonomy_term",
+            "target_uuid": "81ff4092-1342-41fd-921d-5e2f6ea102b8"
+        }
+    ]
+}
