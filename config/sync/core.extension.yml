@@ -54,10 +54,10 @@ module:
   user: 0
   views_ui: 0
   views: 10
-  project_profile: 1000
+  standard: 1000
 theme:
   radix: 0
   project_theme: 0
   claro: 0
   gin: 0
-profile: project_profile
+profile: standard

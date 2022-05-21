@@ -6,7 +6,7 @@
     ],
     "uuid": [
         {
-            "value": "d78c7f2d-c910-4d7b-9978-e3ba77a59279"
+            "value": "8e97b386-db8e-4c48-8b91-248507f7cd0b"
         }
     ],
     "langcode": [
@@ -42,28 +42,27 @@
     ],
     "created": [
         {
-            "value": "2022-05-21T09:11:06+00:00",
+            "value": "2022-05-21T21:10:34+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-05-21T09:11:06+00:00",
+            "value": "2022-05-21T21:10:34+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "roles": [],
+    "roles": [
+        {
+            "target_id": "administrator",
+            "target_type": "user_role",
+            "target_uuid": "ed8c929b-3d25-4bf6-8e91-463df85595ae"
+        }
+    ],
     "default_langcode": [
         {
             "value": true
         }
     ],
-    "path": [
-        {
-            "alias": null,
-            "pid": null,
-            "langcode": "en",
-            "pathauto": 0
-        }
-    ]
+    "user_picture": []
 }

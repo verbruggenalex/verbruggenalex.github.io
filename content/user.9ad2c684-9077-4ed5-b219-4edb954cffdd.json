@@ -6,7 +6,7 @@
     ],
     "uuid": [
         {
-            "value": "4d3965c4-a8b8-4ca3-8794-553aa3dd34a2"
+            "value": "9ad2c684-9077-4ed5-b219-4edb954cffdd"
         }
     ],
     "langcode": [
@@ -38,13 +38,13 @@
     ],
     "created": [
         {
-            "value": "2022-05-21T09:11:06+00:00",
+            "value": "2022-05-21T21:10:34+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-05-21T09:11:06+00:00",
+            "value": "2022-05-21T21:10:34+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -54,12 +54,5 @@
             "value": true
         }
     ],
-    "path": [
-        {
-            "alias": null,
-            "pid": null,
-            "langcode": "en",
-            "pathauto": 0
-        }
-    ]
+    "user_picture": []
 }
