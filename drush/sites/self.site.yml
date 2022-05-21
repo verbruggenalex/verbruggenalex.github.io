@@ -1,0 +1,6 @@
+dev:
+  root: /var/www/html/web
+  uri: http://localhost
+tome:
+  root: /var/www/html/web
+  uri: http://tome.localhost.com

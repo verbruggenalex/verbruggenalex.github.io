@@ -18,6 +18,7 @@
     "prefer-stable": true,
     "require": {
         "composer/installers": "^2.1",
+        "drupal/context": "^4.1",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9",
         "drupal/tome": "^1.7",
@@ -111,8 +112,8 @@
             "./vendor/bin/drush si project_profile --existing-config --site-name='Alex Verbruggen' --site-mail=verbruggenalex@gmail.com --account-mail=verbruggenalex@gmail.com --account-pass admin -y --ansi"
         ],
         "generate-static": [
-            "./vendor/bin/drush tome:export",
-            "./vendor/bin/drush tome:static"
+            "./vendor/bin/drush @tome tome:export -y",
+            "./vendor/bin/drush @tome tome:static"
         ]
     },
     "require-dev": {

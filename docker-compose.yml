@@ -7,12 +7,14 @@ services:
     environment:
       APACHE_DOCUMENT_ROOT: web
       PHP_EXTENSION_GD: 1
-      PHP_INI_MEMORY_LIMIT: 1g
       PHP_EXTENSION_XDEBUG: 1
+      PHP_INI_MEMORY_LIMIT: 1g
       XDEBUG_CLIENT_HOST: 127.0.0.1
     volumes:
       - ${PWD}:/var/www/html
       - ~/.ssh:/home/docker/.ssh
+    extra_hosts:
+      - tome.localhost.com:127.0.0.1
   mysql:
     image: mysql:5.7
     environment:
