@@ -38,20 +38,26 @@ module:
   path_alias: 0
   rdf: 0
   search: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0
   text: 0
+  tome: 0
+  tome_base: 0
+  tome_static: 0
+  tome_sync: 0
+  tome_sync_autoclean: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
   views_ui: 0
   views: 10
-  standard: 1000
+  project_profile: 1000
 theme:
   radix: 0
   project_theme: 0
   claro: 0
   gin: 0
-profile: standard
+profile: project_profile
