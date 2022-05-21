@@ -1,4 +1,4 @@
-uuid: 6657dace-61da-48a5-8603-04958a815148
+uuid: 02a0d926-754d-47c3-8f38-a3d33d5a8f59
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   theme:
     - project_theme
 _core:
-  default_config_hash: OL95neLzLGy3REU0PZRFcKuP-o2u2lA0-ExLvTJm2CM
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
 id: project_theme_messages
 theme: project_theme
-region: header
+region: content
 weight: -4
 provider: null
 plugin: system_messages_block

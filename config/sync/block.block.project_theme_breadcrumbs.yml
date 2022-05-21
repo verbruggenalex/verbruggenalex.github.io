@@ -1,4 +1,4 @@
-uuid: 8e72ef1c-d3b5-4a7d-80d0-8a2909a43069
+uuid: 93d7550f-86ee-47f3-820a-8a27acaaa463
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   theme:
     - project_theme
 _core:
-  default_config_hash: 70PtKdF8a7SM0bHE1P-qRwsJGKKF2oTDbLA1CSaUeTk
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
 id: project_theme_breadcrumbs
 theme: project_theme
-region: header
+region: content
 weight: -5
 provider: null
 plugin: system_breadcrumb_block

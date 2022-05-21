@@ -109,7 +109,7 @@
             "git checkout composer.json"
         ],
         "drupal-install": [
-            "./vendor/bin/drush si project_profile --existing-config --site-name='Alex Verbruggen' --site-mail=verbruggenalex@gmail.com --account-mail=verbruggenalex@gmail.com --account-pass admin -y --ansi"
+            "./vendor/bin/drush si standard --site-name='Alex Verbruggen' --site-mail=verbruggenalex@gmail.com --account-mail=verbruggenalex@gmail.com --account-pass admin -y --ansi"
         ],
         "generate-static": [
             "./vendor/bin/drush @tome tome:export -y",

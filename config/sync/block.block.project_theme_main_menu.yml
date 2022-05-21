@@ -1,4 +1,4 @@
-uuid: 84d6836b-8c1c-4db6-925a-a11daa24a997
+uuid: 487f81fe-8869-419d-958e-a387dc8b47aa
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,11 @@ dependencies:
   theme:
     - project_theme
 _core:
-  default_config_hash: Hg_wD5InHRAAPiOSU-1nGdavywhXuK6jfmu8QVMB-nk
+  default_config_hash: _G1IfGESk7WqvVCi7B3VJxhSY0YICgv1OmuVPJqO8bE
 id: project_theme_main_menu
 theme: project_theme
 region: navbar_left
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

@@ -1,4 +1,4 @@
-uuid: 080ede0e-4264-4b14-bd29-ea87c66bc732
+uuid: b00a4215-e978-4425-9eef-7b8914334729
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - radix
 _core:
-  default_config_hash: d6h9xUaoH5xW1nd9HXeZinur1qT1wP3RF9b9hbTnqRM
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
 id: radix_messages
 theme: radix
 region: navbar_branding

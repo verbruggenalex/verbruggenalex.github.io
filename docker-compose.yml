@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: verbral/docker-drupal:8.1-v4-apache
+    image: verbral/docker-drupal:8.1-v4-apache-node14
     ports:
       - 80:80
     environment:

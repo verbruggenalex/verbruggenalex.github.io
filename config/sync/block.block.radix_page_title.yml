@@ -1,11 +1,11 @@
-uuid: 4607db8e-eee9-4bec-a2ec-bb4ae107b7fe
+uuid: a27bbdaa-6581-417a-b7ac-81dce436a00a
 langcode: en
 status: true
 dependencies:
   theme:
     - radix
 _core:
-  default_config_hash: tlZ4tvXX21yfbJrGtC8Y0fX7vAMACAcLBc0jQF4UR5M
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
 id: radix_page_title
 theme: radix
 region: content

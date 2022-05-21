@@ -1,15 +1,15 @@
-uuid: cfeee938-bddd-472e-8644-204126ac72f4
+uuid: 2b8d6500-d1a1-411e-80e9-6f6671ac7ef3
 langcode: en
 status: true
 dependencies:
   theme:
     - project_theme
 _core:
-  default_config_hash: Lc81JKmmBkg79EVOJe4G7La45qKikM59f77RMm4rkYQ
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
 id: project_theme_page_title
 theme: project_theme
 region: content
-weight: -5
+weight: -3
 provider: null
 plugin: page_title_block
 settings:
