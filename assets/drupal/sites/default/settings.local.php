@@ -189,5 +189,5 @@ if (strtok($_SERVER['SERVER_NAME'], '.') !== 'tome') {
 $settings['hash_salt'] = 'tEtBIG6ef8ivFoNYCdIFSR8KS364uzeSYaHjOw2L5UAqoX2X1tJPM6XKFrBPx2F7N5aH-m4SSA';
 $settings['config_sync_directory'] = '../config/sync';
 $settings['tome_static_directory'] = '../docs';
-$settings['tome_static_path_exclude'] = ['/user/login', '/search'];
+$settings['tome_static_path_exclude'] = ['/user/login', '/search', '/search/node', '/search/node/help'];
 $config['tome_static_cron.settings']['base_url'] = 'https://verbruggenalex.github.io';
