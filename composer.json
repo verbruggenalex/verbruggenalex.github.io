@@ -91,6 +91,11 @@
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
+        },
+        "patches": {
+            "drupal/core": [
+                "https://git.drupalcode.org/project/drupal/-/merge_requests/2187/diffs.patch"
+            ]
         }
     },
     "scripts": {

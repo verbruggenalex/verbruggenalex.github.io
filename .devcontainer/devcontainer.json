@@ -7,10 +7,13 @@
     "extensions": [
 		"bmewburn.vscode-intelephense-client",
 		"marcostazi.VS-code-drupal",
-		"xdebug.php-debug"
+		"ms-azuretools.vscode-docker",
+		"xdebug.php-debug",
+		"whatwedo.twig",
+		"tsega.drupal-8-twig-snippets"
 	],
     "workspaceFolder": "/var/www/html",
     "remoteUser": "docker",
     "shutdownAction": "stopCompose",
-    "postStartCommand": "composer install --prefer-install=auto"
+    "postStartCommand": "composer install --prefer-install=auto && composer drupal-install"
 }
