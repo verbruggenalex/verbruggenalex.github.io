@@ -15,6 +15,7 @@ module:
   config_override_core_fields: 0
   config_update: 0
   context: 0
+  contextual: 0
   ctools: 0
   dblog: 0
   environment_indicator: 0
