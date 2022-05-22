@@ -34,7 +34,12 @@
             "value": "Generic"
         }
     ],
-    "description": [],
+    "description": [
+        {
+            "value": null,
+            "format": null
+        }
+    ],
     "weight": [
         {
             "value": 0
