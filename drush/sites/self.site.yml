@@ -1,6 +1,6 @@
-dev:
+local:
   root: /var/www/html/web
   uri: http://localhost
-tome:
+github:
   root: /var/www/html/web
-  uri: http://tome.localhost.com
+  uri: https://verbruggenalex.github.io

@@ -37,7 +37,7 @@ visibility:
   request_domain:
     id: request_domain
     negate: true
-    domains: tome.localhost.com
+    domains: verbruggenalex.github.io
   user_status:
     id: user_status
     negate: false

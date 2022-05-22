@@ -169,7 +169,7 @@ $settings['trusted_host_patterns'] = ['.*'];
 $settings['extension_discovery_scan_tests'] = TRUE;
 
 // If we are not on tome we disable all cache.
-if (strtok($_SERVER['SERVER_NAME'], '.') !== 'tome') {
+if (strtok($_SERVER['SERVER_NAME'], '.') !== 'verbruggenalex') {
   // Disable caches.
   $settings['cache']['bins']['render'] = 'cache.backend.null';
   $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';

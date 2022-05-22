@@ -112,9 +112,9 @@
             "./vendor/bin/drush si project_profile --existing-config --site-name='Alex Verbruggen' --site-mail=verbruggenalex@gmail.com --account-mail=verbruggenalex@gmail.com --account-pass admin -y --ansi"
         ],
         "generate-static": [
-            "./vendor/bin/drush @tome cr",
-            "./vendor/bin/drush @tome tome:export -y",
-            "./vendor/bin/drush @tome tome:static"
+            "./vendor/bin/drush @github cr",
+            "./vendor/bin/drush @github tome:export -y",
+            "./vendor/bin/drush @github tome:static"
         ]
     },
     "require-dev": {
