@@ -9,6 +9,8 @@ grumphp:
       max_size: 100K
       ignore_patterns:
         - phpstan-baseline.neon
+        - "#css_(.*).css#"
+        - "#js_(.*).js#"
     git_blacklist:
       keywords:
         - "die("
