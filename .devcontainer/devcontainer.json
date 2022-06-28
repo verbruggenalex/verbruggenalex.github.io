@@ -11,7 +11,8 @@
 		"xdebug.php-debug",
 		"whatwedo.twig",
 		"tsega.drupal-8-twig-snippets",
-		"eamodio.gitlens"
+		"eamodio.gitlens",
+		"GitHub.copilot"
 	],
     "workspaceFolder": "/var/www/html",
     "remoteUser": "docker",
