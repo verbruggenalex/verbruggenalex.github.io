@@ -1,0 +1,251 @@
+_core:
+  default_config_hash: 9vuCgVfNVrIDxhjayKTOy_TgNj_ORObyDq_3yK7JSO4
+themes:
+  a11y-dark: 'A11y Dark'
+  a11y-light: 'A11y Light'
+  agate: Agate
+  an-old-hope: 'An Old Hope'
+  androidstudio: Androidstudio
+  arduino-light: 'Arduino Light'
+  arta: Arta
+  ascetic: Ascetic
+  atom-one-dark: 'Atom One Dark'
+  atom-one-dark-reasonable: 'Atom One Dark Reasonable'
+  atom-one-light: 'Atom One Light'
+  base16/3024: Base16/3024
+  base16/apathy: Base16/apathy
+  base16/apprentice: Base16/apprentice
+  base16/ashes: Base16/ashes
+  base16/atelier-cave: 'Base16/atelier Cave'
+  base16/atelier-cave-light: 'Base16/atelier Cave Light'
+  base16/atelier-dune: 'Base16/atelier Dune'
+  base16/atelier-dune-light: 'Base16/atelier Dune Light'
+  base16/atelier-estuary: 'Base16/atelier Estuary'
+  base16/atelier-estuary-light: 'Base16/atelier Estuary Light'
+  base16/atelier-forest: 'Base16/atelier Forest'
+  base16/atelier-forest-light: 'Base16/atelier Forest Light'
+  base16/atelier-heath: 'Base16/atelier Heath'
+  base16/atelier-heath-light: 'Base16/atelier Heath Light'
+  base16/atelier-lakeside: 'Base16/atelier Lakeside'
+  base16/atelier-lakeside-light: 'Base16/atelier Lakeside Light'
+  base16/atelier-plateau: 'Base16/atelier Plateau'
+  base16/atelier-plateau-light: 'Base16/atelier Plateau Light'
+  base16/atelier-savanna: 'Base16/atelier Savanna'
+  base16/atelier-savanna-light: 'Base16/atelier Savanna Light'
+  base16/atelier-seaside: 'Base16/atelier Seaside'
+  base16/atelier-seaside-light: 'Base16/atelier Seaside Light'
+  base16/atelier-sulphurpool: 'Base16/atelier Sulphurpool'
+  base16/atelier-sulphurpool-light: 'Base16/atelier Sulphurpool Light'
+  base16/atlas: Base16/atlas
+  base16/bespin: Base16/bespin
+  base16/black-metal: 'Base16/black Metal'
+  base16/black-metal-bathory: 'Base16/black Metal Bathory'
+  base16/black-metal-burzum: 'Base16/black Metal Burzum'
+  base16/black-metal-dark-funeral: 'Base16/black Metal Dark Funeral'
+  base16/black-metal-gorgoroth: 'Base16/black Metal Gorgoroth'
+  base16/black-metal-immortal: 'Base16/black Metal Immortal'
+  base16/black-metal-khold: 'Base16/black Metal Khold'
+  base16/black-metal-marduk: 'Base16/black Metal Marduk'
+  base16/black-metal-mayhem: 'Base16/black Metal Mayhem'
+  base16/black-metal-nile: 'Base16/black Metal Nile'
+  base16/black-metal-venom: 'Base16/black Metal Venom'
+  base16/brewer: Base16/brewer
+  base16/bright: Base16/bright
+  base16/brogrammer: Base16/brogrammer
+  base16/brush-trees: 'Base16/brush Trees'
+  base16/brush-trees-dark: 'Base16/brush Trees Dark'
+  base16/chalk: Base16/chalk
+  base16/circus: Base16/circus
+  base16/classic-dark: 'Base16/classic Dark'
+  base16/classic-light: 'Base16/classic Light'
+  base16/codeschool: Base16/codeschool
+  base16/cupcake: Base16/cupcake
+  base16/cupertino: Base16/cupertino
+  base16/danqing: Base16/danqing
+  base16/darcula: Base16/darcula
+  base16/dark-violet: 'Base16/dark Violet'
+  base16/darkmoss: Base16/darkmoss
+  base16/darktooth: Base16/darktooth
+  base16/decaf: Base16/decaf
+  base16/default-dark: 'Base16/default Dark'
+  base16/default-light: 'Base16/default Light'
+  base16/dirtysea: Base16/dirtysea
+  base16/dracula: Base16/dracula
+  base16/edge-dark: 'Base16/edge Dark'
+  base16/edge-light: 'Base16/edge Light'
+  base16/eighties: Base16/eighties
+  base16/embers: Base16/embers
+  base16/equilibrium-dark: 'Base16/equilibrium Dark'
+  base16/equilibrium-gray-dark: 'Base16/equilibrium Gray Dark'
+  base16/equilibrium-gray-light: 'Base16/equilibrium Gray Light'
+  base16/equilibrium-light: 'Base16/equilibrium Light'
+  base16/espresso: Base16/espresso
+  base16/eva: Base16/eva
+  base16/eva-dim: 'Base16/eva Dim'
+  base16/flat: Base16/flat
+  base16/framer: Base16/framer
+  base16/fruit-soda: 'Base16/fruit Soda'
+  base16/gigavolt: Base16/gigavolt
+  base16/github: Base16/github
+  base16/google-dark: 'Base16/google Dark'
+  base16/google-light: 'Base16/google Light'
+  base16/grayscale-dark: 'Base16/grayscale Dark'
+  base16/grayscale-light: 'Base16/grayscale Light'
+  base16/green-screen: 'Base16/green Screen'
+  base16/gruvbox-dark-hard: 'Base16/gruvbox Dark Hard'
+  base16/gruvbox-dark-medium: 'Base16/gruvbox Dark Medium'
+  base16/gruvbox-dark-pale: 'Base16/gruvbox Dark Pale'
+  base16/gruvbox-dark-soft: 'Base16/gruvbox Dark Soft'
+  base16/gruvbox-light-hard: 'Base16/gruvbox Light Hard'
+  base16/gruvbox-light-medium: 'Base16/gruvbox Light Medium'
+  base16/gruvbox-light-soft: 'Base16/gruvbox Light Soft'
+  base16/hardcore: Base16/hardcore
+  base16/harmonic16-dark: 'Base16/harmonic16 Dark'
+  base16/harmonic16-light: 'Base16/harmonic16 Light'
+  base16/heetch-dark: 'Base16/heetch Dark'
+  base16/heetch-light: 'Base16/heetch Light'
+  base16/helios: Base16/helios
+  base16/hopscotch: Base16/hopscotch
+  base16/horizon-dark: 'Base16/horizon Dark'
+  base16/horizon-light: 'Base16/horizon Light'
+  base16/humanoid-dark: 'Base16/humanoid Dark'
+  base16/humanoid-light: 'Base16/humanoid Light'
+  base16/ia-dark: 'Base16/ia Dark'
+  base16/ia-light: 'Base16/ia Light'
+  base16/icy-dark: 'Base16/icy Dark'
+  base16/ir-black: 'Base16/ir Black'
+  base16/isotope: Base16/isotope
+  base16/kimber: Base16/kimber
+  base16/london-tube: 'Base16/london Tube'
+  base16/macintosh: Base16/macintosh
+  base16/marrakesh: Base16/marrakesh
+  base16/materia: Base16/materia
+  base16/material: Base16/material
+  base16/material-darker: 'Base16/material Darker'
+  base16/material-lighter: 'Base16/material Lighter'
+  base16/material-palenight: 'Base16/material Palenight'
+  base16/material-vivid: 'Base16/material Vivid'
+  base16/mellow-purple: 'Base16/mellow Purple'
+  base16/mexico-light: 'Base16/mexico Light'
+  base16/mocha: Base16/mocha
+  base16/monokai: Base16/monokai
+  base16/nebula: Base16/nebula
+  base16/nord: Base16/nord
+  base16/nova: Base16/nova
+  base16/ocean: Base16/ocean
+  base16/oceanicnext: Base16/oceanicnext
+  base16/one-light: 'Base16/one Light'
+  base16/onedark: Base16/onedark
+  base16/outrun-dark: 'Base16/outrun Dark'
+  base16/papercolor-dark: 'Base16/papercolor Dark'
+  base16/papercolor-light: 'Base16/papercolor Light'
+  base16/paraiso: Base16/paraiso
+  base16/pasque: Base16/pasque
+  base16/phd: Base16/phd
+  base16/pico: Base16/pico
+  base16/pop: Base16/pop
+  base16/porple: Base16/porple
+  base16/qualia: Base16/qualia
+  base16/railscasts: Base16/railscasts
+  base16/rebecca: Base16/rebecca
+  base16/ros-pine: 'Base16/ros Pine'
+  base16/ros-pine-dawn: 'Base16/ros Pine Dawn'
+  base16/ros-pine-moon: 'Base16/ros Pine Moon'
+  base16/sagelight: Base16/sagelight
+  base16/sandcastle: Base16/sandcastle
+  base16/seti-ui: 'Base16/seti Ui'
+  base16/shapeshifter: Base16/shapeshifter
+  base16/silk-dark: 'Base16/silk Dark'
+  base16/silk-light: 'Base16/silk Light'
+  base16/snazzy: Base16/snazzy
+  base16/solar-flare: 'Base16/solar Flare'
+  base16/solar-flare-light: 'Base16/solar Flare Light'
+  base16/solarized-dark: 'Base16/solarized Dark'
+  base16/solarized-light: 'Base16/solarized Light'
+  base16/spacemacs: Base16/spacemacs
+  base16/summercamp: Base16/summercamp
+  base16/summerfruit-dark: 'Base16/summerfruit Dark'
+  base16/summerfruit-light: 'Base16/summerfruit Light'
+  base16/synth-midnight-terminal-dark: 'Base16/synth Midnight Terminal Dark'
+  base16/synth-midnight-terminal-light: 'Base16/synth Midnight Terminal Light'
+  base16/tango: Base16/tango
+  base16/tender: Base16/tender
+  base16/tomorrow: Base16/tomorrow
+  base16/tomorrow-night: 'Base16/tomorrow Night'
+  base16/twilight: Base16/twilight
+  base16/unikitty-dark: 'Base16/unikitty Dark'
+  base16/unikitty-light: 'Base16/unikitty Light'
+  base16/vulcan: Base16/vulcan
+  base16/windows-10: 'Base16/windows 10'
+  base16/windows-10-light: 'Base16/windows 10 Light'
+  base16/windows-95: 'Base16/windows 95'
+  base16/windows-95-light: 'Base16/windows 95 Light'
+  base16/windows-high-contrast: 'Base16/windows High Contrast'
+  base16/windows-high-contrast-light: 'Base16/windows High Contrast Light'
+  base16/windows-nt: 'Base16/windows Nt'
+  base16/windows-nt-light: 'Base16/windows Nt Light'
+  base16/woodland: Base16/woodland
+  base16/xcode-dusk: 'Base16/xcode Dusk'
+  base16/zenburn: Base16/zenburn
+  brown-paper: 'Brown Paper'
+  codepen-embed: 'Codepen Embed'
+  color-brewer: 'Color Brewer'
+  dark: Dark
+  default: Default
+  devibeans: Devibeans
+  docco: Docco
+  far: Far
+  felipec: Felipec
+  foundation: Foundation
+  github: Github
+  github-dark: 'Github Dark'
+  github-dark-dimmed: 'Github Dark Dimmed'
+  github-gist: 'Github Gist'
+  gml: Gml
+  googlecode: Googlecode
+  gradient-dark: 'Gradient Dark'
+  gradient-light: 'Gradient Light'
+  grayscale: Grayscale
+  hybrid: Hybrid
+  idea: Idea
+  intellij-light: 'Intellij Light'
+  ir-black: 'Ir Black'
+  isbl-editor-dark: 'Isbl Editor Dark'
+  isbl-editor-light: 'Isbl Editor Light'
+  kimbie-dark: 'Kimbie Dark'
+  kimbie-light: 'Kimbie Light'
+  lightfair: Lightfair
+  lioshi: Lioshi
+  magula: Magula
+  mono-blue: 'Mono Blue'
+  monokai: Monokai
+  monokai-sublime: 'Monokai Sublime'
+  night-owl: 'Night Owl'
+  nnfx-dark: 'Nnfx Dark'
+  nnfx-light: 'Nnfx Light'
+  nord: Nord
+  obsidian: Obsidian
+  panda-syntax-dark: 'Panda Syntax Dark'
+  panda-syntax-light: 'Panda Syntax Light'
+  paraiso-dark: 'Paraiso Dark'
+  paraiso-light: 'Paraiso Light'
+  pojoaque: Pojoaque
+  purebasic: Purebasic
+  qtcreator-dark: 'Qtcreator Dark'
+  qtcreator-light: 'Qtcreator Light'
+  rainbow: Rainbow
+  routeros: Routeros
+  school-book: 'School Book'
+  shades-of-purple: 'Shades Of Purple'
+  srcery: Srcery
+  stackoverflow-dark: 'Stackoverflow Dark'
+  stackoverflow-light: 'Stackoverflow Light'
+  sunburst: Sunburst
+  tokyo-night-dark: 'Tokyo Night Dark'
+  tokyo-night-light: 'Tokyo Night Light'
+  tomorrow-night-blue: 'Tomorrow Night Blue'
+  tomorrow-night-bright: 'Tomorrow Night Bright'
+  vs: Vs
+  vs2015: Vs2015
+  xcode: Xcode
+  xt256: Xt256

@@ -9,6 +9,7 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  ckeditor5: 0
   color: 0
   components: 0
   config: 0
@@ -20,6 +21,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_highlightjs: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -29,6 +31,7 @@ module:
   link: 0
   menu_link_content: 0
   menu_ui: 0
+  mysql: 0
   node: 0
   options: 0
   page_cache: 0
@@ -52,10 +55,10 @@ module:
   user: 0
   views_ui: 0
   views: 10
-  standard: 1000
+  minimal: 1000
 theme:
   radix: 0
   project_theme: 0
   claro: 0
   gin: 0
-profile: standard
+profile: minimal

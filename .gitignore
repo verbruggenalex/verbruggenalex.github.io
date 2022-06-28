@@ -1,5 +1,6 @@
 /vendor/
 /web/
+/drupal/
 /.gitattributes
 /.editorconfig
 /composer.lock

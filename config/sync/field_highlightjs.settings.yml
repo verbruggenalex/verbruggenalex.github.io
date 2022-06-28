@@ -1,0 +1,40 @@
+_core:
+  default_config_hash: sHx9YlqZOMt39BIMMvDnfxDFcW_FthyX3Vsf8yd9rgM
+theme: agate
+version: 11.5.1
+cdn: cloudflare.com
+languages:
+  bash: bash
+  c: c
+  cpp: cpp
+  csharp: csharp
+  css: css
+  diff: diff
+  go: go
+  ini: ini
+  java: java
+  javascript: javascript
+  json: json
+  kotlin: kotlin
+  less: less
+  lua: lua
+  makefile: makefile
+  markdown: markdown
+  objectivec: objectivec
+  perl: perl
+  php: php
+  php-template: php-template
+  plaintext: plaintext
+  python: python
+  python-repl: python-repl
+  r: r
+  ruby: ruby
+  rust: rust
+  scss: scss
+  shell: shell
+  sql: sql
+  swift: swift
+  typescript: typescript
+  vbnet: vbnet
+  xml: xml
+  yaml: yaml
