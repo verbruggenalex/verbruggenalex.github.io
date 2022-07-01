@@ -1,0 +1,94 @@
+{
+    "uuid": [
+        {
+            "value": "e9b8392e-7b40-4145-826b-3c97e4c73f5f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "e14162d0-7b64-44c4-99ac-472a36b59a8e"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2022-07-01T19:46:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "942ffce0-264f-4a3a-a1e4-d30b1dcd3fb4"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "942ffce0-264f-4a3a-a1e4-d30b1dcd3fb4"
+        }
+    ],
+    "title": [
+        {
+            "value": "Test php"
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-07-01T19:45:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-07-01T19:46:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "",
+            "pid": null,
+            "langcode": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<pre><code class=\"language-php\">&lt;?php\r\n\r\ndeclare(strict_types=1);\r\n\r\nnamespace Drupal\\ckeditor5\\Plugin\\CKEditor5Plugin;\r\n\r\nuse Drupal\\ckeditor5\\Plugin\\CKEditor5PluginConfigurableTrait;\r\nuse Drupal\\ckeditor5\\Plugin\\CKEditor5PluginDefault;\r\nuse Drupal\\ckeditor5\\Plugin\\CKEditor5PluginConfigurableInterface;\r\nuse Drupal\\ckeditor5\\Plugin\\CKEditor5PluginDefinition;\r\nuse Drupal\\ckeditor5\\Plugin\\CKEditor5PluginElementsSubsetInterface;\r\nuse Drupal\\ckeditor5\\Plugin\\CKEditor5PluginManagerInterface;\r\nuse Drupal\\Core\\Form\\FormStateInterface;\r\nuse Drupal\\editor\\EditorInterface;\r\n\r\n\/**\r\n * CKEditor 5 CodeBlock plugin.\r\n *\r\n * @internal\r\n *   Plugin classes are internal.\r\n *\/\r\nclass CodeBlock extends CKEditor5PluginDefault implements CKEditor5PluginConfigurableInterface, CKEditor5PluginElementsSubsetInterface {\r\n\r\n  use CKEditor5PluginConfigurableTrait;\r\n\r\n  \/**\r\n   * The languages that cannot be disabled.\r\n   *\r\n   * @var string[]\r\n   *\/\r\n  const ALWAYS_ENABLED_LANGUAGES = [\r\n    'plaintext',\r\n  ];\r\n\r\n  \/**\r\n   * The default configuration for this plugin.\r\n   *\r\n   * @var string[][]\r\n   *\/\r\n  const DEFAULT_CONFIGURATION = [\r\n    'enabled_languages' =&gt; [\r\n      'c',\r\n      'cpp',\r\n      'cs',\r\n      'css',\r\n      'diff',\r\n      'html',\r\n      'java',\r\n      'javascript',\r\n      'php',\r\n      'python',\r\n      'ruby',\r\n      'typescript',\r\n      'xml',\r\n    ],\r\n  ];\r\n\r\n  \/**\r\n   * {@inheritdoc}\r\n   *\/\r\n  public function defaultConfiguration() {\r\n    return static::DEFAULT_CONFIGURATION;\r\n  }\r\n\r\n  \/**\r\n   * Computes all valid choices for the \"enabled_languages\" setting.\r\n   *\r\n   * @see ckeditor5.schema.yml\r\n   *\r\n   * @return string[]\r\n   *   All valid choices.\r\n   *\/\r\n  public static function validChoices(): array {\r\n    $cke5_plugin_manager = \\Drupal::service('plugin.manager.ckeditor5.plugin');\r\n    assert($cke5_plugin_manager instanceof CKEditor5PluginManagerInterface);\r\n    $plugin_definition = $cke5_plugin_manager-&gt;getDefinition('ckeditor5_codeBlock');\r\n    assert($plugin_definition-&gt;getClass() === static::class);\r\n    return array_diff(\r\n      array_column($plugin_definition-&gt;getCKEditor5Config()['codeBlock']['languages'], 'language'),\r\n      static::ALWAYS_ENABLED_LANGUAGES\r\n    );\r\n  }\r\n\r\n  \/**\r\n   * Gets all enabled languages.\r\n   *\r\n   * @return string[]\r\n   *   The value in the plugins.ckeditor5_codeBlock.enabled_languages\r\n   *   configuration plus the languages that are always enabled.\r\n   *\/\r\n  private function getEnabledLanguages(): array {\r\n    return array_merge(\r\n      self::ALWAYS_ENABLED_LANGUAGES,\r\n      $this-&gt;configuration['enabled_languages']\r\n    );\r\n  }\r\n\r\n  \/**\r\n   * {@inheritdoc}\r\n   *\r\n   * Form for choosing which languages are available for code blocks.\r\n   *\/\r\n  public function buildConfigurationForm(array $form, FormStateInterface $form_state) {\r\n    $form['enabled_languages'] = [\r\n      '#type' =&gt; 'fieldset',\r\n      '#title' =&gt; $this-&gt;t('Enabled Languages'),\r\n      '#description' =&gt; $this-&gt;t('These are the languages that will appear in the codeblock languages dropdown.'),\r\n    ];\r\n\r\n    $languages = $this-&gt;getPluginDefinition()-&gt;getCKEditor5Config()['codeBlock']['languages'];\r\n    foreach ($languages as $language_option) {\r\n      $language = $language_option['language'];\r\n\r\n      if (in_array($language, self::ALWAYS_ENABLED_LANGUAGES, TRUE)) {\r\n        continue;\r\n      }\r\n\r\n      $form['enabled_languages'][$language] = self::generateCheckboxForLanguageOption($language_option);\r\n      $form['enabled_languages'][$language]['#default_value'] = in_array($language, $this-&gt;configuration['enabled_languages'], TRUE) ? $language : NULL;\r\n    }\r\n\r\n    return $form;\r\n  }\r\n\r\n  \/**\r\n   * {@inheritdoc}\r\n   *\/\r\n  public function validateConfigurationForm(array &amp;$form, FormStateInterface $form_state) {\r\n    \/\/ Match the config schema structure at ckeditor5.plugin.ckeditor5_codeBlock.\r\n    $form_value = $form_state-&gt;getValue('enabled_languages');\r\n    $config_value = array_values(array_filter($form_value));\r\n    $form_state-&gt;setValue('enabled_languages', $config_value);\r\n  }\r\n\r\n  \/**\r\n   * {@inheritdoc}\r\n   *\/\r\n  public function submitConfigurationForm(array &amp;$form, FormStateInterface $form_state) {\r\n    $this-&gt;configuration['enabled_languages'] = $form_state-&gt;getValue('enabled_languages');\r\n  }\r\n\r\n  \/**\r\n   * Generates checkbox for a CKEditor 5 codeblock plugin config option.\r\n   *\r\n   * @param array $language_option\r\n   *   A language option configuration as the CKEditor 5 Heading plugin expects\r\n   *   in its configuration.\r\n   *\r\n   * @return array\r\n   *   The checkbox render array.\r\n   *\/\r\n  private static function generateCheckboxForLanguageOption(array $language_option): array {\r\n    \/\/ This requires the `language` and `label` properties. The `class` property\r\n    \/\/ is optional.\r\n    assert(array_key_exists('language', $language_option));\r\n    assert(array_key_exists('label', $language_option));\r\n\r\n    $checkbox = [\r\n      '#type' =&gt; 'checkbox',\r\n      '#title' =&gt; $language_option['label'],\r\n      '#return_value' =&gt; $language_option['language'],\r\n    ];\r\n    if (isset($language_option['class'])) {\r\n      $checkbox['#label_attributes']['class'][] = $language_option['class'];\r\n    }\r\n\r\n    return $checkbox;\r\n  }\r\n\r\n  \/**\r\n   * {@inheritdoc}\r\n   *\r\n   * Filters the language options to those chosen in editor config.\r\n   *\r\n   * @see https:\/\/api.drupal.org\/api\/drupal\/core%21modules%21ckeditor5%21ckeditor5.api.php\/function\/hook_ckeditor5_plugin_info_alter\r\n   * @see https:\/\/ckeditor.com\/docs\/ckeditor5\/latest\/features\/code-blocks.html#configuring-code-block-languages\r\n   *\/\r\n  public function getDynamicPluginConfig(array $static_plugin_config, EditorInterface $editor): array {\r\n    $enabled_languages = $this-&gt;getEnabledLanguages();\r\n    $all_language_options = $static_plugin_config['codeBlock']['languages'];\r\n\r\n    $configured_language_options = array_filter($all_language_options, function ($option) use ($enabled_languages) {\r\n      return in_array($option['language'], $enabled_languages, TRUE);\r\n    });\r\n\r\n    return [\r\n      'codeBlock' =&gt; [\r\n        'languages' =&gt; array_values($configured_language_options),\r\n      ],\r\n    ];\r\n  }\r\n\r\n  \/**\r\n   * {@inheritdoc}\r\n   *\/\r\n  public function getElementsSubset(): array {\r\n    \/\/ We do not use a real subset. Since we only allow classes starting with\r\n    \/\/ \"language-\". We return the elements from the plugin definition instead.\r\n    \/\/ If we want to limit the classes to only the enabled code languages we\r\n    \/\/ need to loosen the restriction to allow all classes. This is because the\r\n    \/\/ diff functionality on attribute values does not support wildcards (yet).\r\n    \/\/ @see \\Drupal\\ckeditor5\\HTMLRestrictions::doDiff()\r\n    $plugin_definition = $this-&gt;getPluginDefinition();\r\n    assert($plugin_definition instanceof CKEditor5PluginDefinition);\r\n    return $plugin_definition-&gt;getElements();\r\n  }\r\n\r\n}\r\n<\/code><\/pre>",
+            "format": "full_html",
+            "summary": ""
+        }
+    ]
+}

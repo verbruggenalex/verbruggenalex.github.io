@@ -4,37 +4,22 @@ theme: agate
 version: 11.5.1
 cdn: cloudflare.com
 languages:
+  apache: apache
   bash: bash
-  c: c
-  cpp: cpp
-  csharp: csharp
   css: css
   diff: diff
-  go: go
+  dockerfile: dockerfile
+  gherkin: gherkin
   ini: ini
-  java: java
   javascript: javascript
   json: json
-  kotlin: kotlin
   less: less
-  lua: lua
   makefile: makefile
   markdown: markdown
-  objectivec: objectivec
-  perl: perl
+  nginx: nginx
   php: php
-  php-template: php-template
-  plaintext: plaintext
-  python: python
-  python-repl: python-repl
-  r: r
-  ruby: ruby
-  rust: rust
   scss: scss
-  shell: shell
   sql: sql
-  swift: swift
-  typescript: typescript
-  vbnet: vbnet
+  twig: twig
   xml: xml
   yaml: yaml
